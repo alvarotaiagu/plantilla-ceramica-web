@@ -13,7 +13,7 @@
     "estado": "Cerrado ahora · abre hoy a las 10:30",
     "mermaInicial": "merma__caja merma--0 · alto 22,0 · escala matrix(1, 0, 0, 1, 0, 0)",
     "muestras": "8 esmaltes · 8 chapas",
-    "fotos": "576x720 | 0x0 | 0x0",
+    "fotos": "576x864 | 0x0 | 0x0",
     "mermaBotonCocida": "merma__caja merma--2 · 19,4 cm · perdido 12% · linea 306.343px  →  merma__caja merma--2 · 19,4 cm · perdido 12% · linea 306.343px",
     "mermaBotonRecien": "merma__caja merma--2 · 19,4 cm · linea 306.343px  →  merma__caja merma--0 · 22,0 cm · linea 346.092px",
     "goteoEsmaltes": "14px 22px 9px 26px 12px 18px 30px 11px  →  14px 22px 9px 26px 12px 18px 30px 11px",
@@ -24,5 +24,5 @@
     "sinGsap": "has-motion:false · titular opacidad:1 · titular texto:Todo lo que sale del horno e · foto clip:inset(0px) · contador:12 · estado:Cerrado ahora · abre hoy a las 10: || tras pulsar Cocida: merma__caja merma--2 · 19,4 cm",
     "reduce": "has-motion:true · tras pulsar Seca: merma__caja merma--1 · 20,5 cm · perdido 7% · escala matrix(0.93, 0, 0, 0.93, 0, 0) · foto clip:inset(0px)"
   },
-  "longtask": "96, 61, 81"
+  "longtask": ""
 }
