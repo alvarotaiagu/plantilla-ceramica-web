@@ -9,7 +9,7 @@ ambiente y así se dice en su pie de foto.
 
 | Archivo | Se usa en | Autoría | Original |
 |---|---|---|---|
-| `assets/fotos/piezas-1600.jpg` · `piezas-800.jpg` | Sección «Las piezas» | Pramod Tiwari | https://www.pexels.com/photo/13575092/ |
+| `assets/fotos/piezas-1600.jpg` · `piezas-800.jpg` | Sección «Las piezas» |  Irina Novikova | https://www.pexels.com/photo/29287725/ |
 | `assets/fotos/taller-1600.jpg` · `taller-800.jpg` | Sección «Encargos» | cottonbro studio | https://www.pexels.com/photo/7191402/ |
 | `assets/fotos/manos-1600.jpg` · `manos-800.jpg` | Sección «El taller» | Anastasia Shuraeva | https://www.pexels.com/photo/5566943/ |
 
@@ -20,11 +20,11 @@ la plantilla; no contiene fotografía ajena.
 
 Todo lo demás está dibujado en SVG o en CSS para esta plantilla:
 
-- La **taza de gres** (hero, escena de la merma y la versión partida del 404).
+- La **jarra de gres** (hero, escena de la merma y la versión partida del 404).
 - La **regla graduada** de 0 a 24 cm de la sección «La merma».
 - El **muestrario de ocho esmaltes**: cada chapa es un degradado CSS con sus
   motas y su goteo, no una imagen.
-- El **logotipo** (la taza de perfil con la boca maciza) y el `favicon.svg`.
+- El **logotipo** (la jarra de perfil con la boca maciza) y el `favicon.svg`.
 - El mapa de relleno que se ve antes de aceptar el mapa de Google.
 
 ## Tipografías

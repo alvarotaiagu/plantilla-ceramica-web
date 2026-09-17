@@ -206,7 +206,7 @@ html.has-motion .hero__titular .letra { transform: translateY(110%); }
 .hero__pieza { margin: 0; text-align: center; }
 .hero__pieza figcaption { font-size: .78rem; color: var(--tinta-suave); margin-top: .9rem; }
 
-/* la taza dibujada */
+/* la jarra dibujada (las clases se llaman .taza por dentro) */
 .taza__cuerpo { fill: var(--panel); stroke: var(--tinta); stroke-width: 3; }
 .taza__boca { fill: var(--panel); stroke: var(--tinta); stroke-width: 3; }
 .taza__interior { fill: var(--celadon); }
@@ -270,7 +270,7 @@ html.has-motion .titular .letra { transform: translateY(110%); }
 .merma__viaje { position: relative; }
 @media (min-width: 861px) {
   .merma__caja { position: sticky; top: clamp(84px, 11vh, 120px); }
-  html.has-motion .merma__viaje::after { content: ""; display: block; height: 170vh; }
+  html.has-motion .merma__viaje::after { content: ""; display: block; height: 260vh; }
 }
 
 .merma--0 { --escala: 1; }
@@ -278,6 +278,7 @@ html.has-motion .titular .letra { transform: translateY(110%); }
 .merma--2 { --escala: .88; }
 
 .merma__escena {
+  align-self: center;
   --esc: clamp(290px, 44vh, 420px);
   display: flex; align-items: flex-end; justify-content: center;
   gap: clamp(.8rem, 2vw, 1.8rem);
@@ -414,7 +415,14 @@ html.has-motion figure[data-mascara] img { clip-path: inset(0 0 100% 0); transit
 html.has-motion figure[data-mascara].visible img { clip-path: inset(0 0 0 0); }
 figure[data-mascara] figcaption { font-size: .78rem; color: var(--tinta-suave); margin-top: .7rem; }
 
-.encargos { background: var(--panel); border-block: 1px solid rgba(51, 43, 36, .14); }
+.encargos, .taller { position: relative; z-index: 0; }
+.encargos::before, .taller::before {
+  content: ""; position: absolute; top: 0; bottom: 0;
+  left: 50%; width: 100vw; margin-left: -50vw; z-index: -1;
+}
+.encargos::before { background: var(--panel); border-block: 1px solid rgba(51, 43, 36, .14); }
+.taller::before { background: var(--crema); border-top: 1px solid rgba(51, 43, 36, .14); }
+
 .encargos__lista { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
 .encargos__lista li { position: relative; padding-left: 1.6rem; }
 .encargos__lista li::before {
@@ -443,7 +451,7 @@ figure[data-mascara] figcaption { font-size: .78rem; color: var(--tinta-suave); 
 .curso dd { margin: .15rem 0 0; font-family: var(--titulo); font-size: 1.2rem; color: var(--hierro); }
 
 /* ====================== 06 · el taller ====================== */
-.taller { background: var(--crema); border-top: 1px solid rgba(51, 43, 36, .14); }
+
 .taller__rejilla {
   display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
   gap: clamp(1.8rem, 5vw, 4rem); align-items: start;
