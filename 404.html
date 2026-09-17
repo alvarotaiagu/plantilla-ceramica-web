@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- SITIO DE DEMOSTRACIÓN · Olería Rañal es un taller ficticio. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Esta página se quedó en el horno · Olería Rañal</title>
+<meta name="description" content="Página no encontrada.">
+<meta name="theme-color" content="#ede6dc">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..600&family=Public+Sans:ital,wght@0,300..700;1,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<style>
+  /* la taza rota: el mismo dibujo, partido por la mitad */
+  .taza--rota .mitad { transform-origin: 105px 258px; }
+  .taza--rota .mitad--izq { transform: rotate(-7deg) translateX(-6px); }
+  .taza--rota .mitad--der { transform: rotate(9deg) translateX(8px); }
+</style>
+</head>
+<body>
+<main class="error-404">
+  <div>
+    <svg class="taza taza--rota" viewBox="0 0 210 268" role="img" aria-label="Dibujo de una taza de gres partida en dos">
+      <g class="mitad mitad--izq">
+        <path class="taza__cuerpo" d="M43 13h62v245H81a25 25 0 0 1-25-23Z"></path>
+        <path class="taza__boca" d="M43 13a62 13 0 0 1 62-13v26a62 13 0 0 1-62-13Z"></path>
+      </g>
+      <g class="mitad mitad--der">
+        <path class="taza__asa" d="M167 62c28 3 35 21 35 43s-11 40-37 42" fill="none" stroke-width="13" stroke-linecap="round"></path>
+        <path class="taza__cuerpo" d="M105 13h62l-13 222a25 25 0 0 1-25 23h-24Z"></path>
+        <path class="taza__boca" d="M105 0a62 13 0 0 1 62 13 62 13 0 0 1-62 13Z"></path>
+      </g>
+    </svg>
+    <h1>Esta página se quedó en el horno</h1>
+    <p>La dirección que has pedido no existe en este sitio. Pasa también con las piezas: unas salen y otras se abren por el asa.</p>
+    <p style="margin-top:2rem"><a class="boton boton--hierro" href="index.html">Volver al taller</a></p>
+  </div>
+</main>
+
+<footer class="pie">
+  <p class="pie__demo" style="margin-top:0"><strong>Sitio de demostración.</strong> Olería Rañal es un taller ficticio.</p>
+</footer>
+</body>
+</html>

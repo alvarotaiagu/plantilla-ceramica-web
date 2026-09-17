@@ -1,0 +1,13 @@
+{
+  "name": "Olería Rañal · taller de cerámica (demostración)",
+  "short_name": "Olería Rañal",
+  "description": "Plantilla de demostración para un taller de cerámica. Negocio ficticio.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ede6dc",
+  "theme_color": "#ede6dc",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

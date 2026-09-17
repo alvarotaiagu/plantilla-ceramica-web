@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  SITIO DE DEMOSTRACIÓN — Olería Rañal es un taller FICTICIO.
+  Nombre, dirección, teléfonos, piezas, precios, cursos y
+  opiniones son de muestra y no corresponden a ningún taller
+  real. No se inventa ningún número de registro artesano.
+  Plantilla pensada para reskinear a un cliente real del sector.
+  ============================================================
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Olería Rañal · Taller de cerámica en Ponteceso</title>
+<meta name="description" content="Taller de cerámica de gres en Ponteceso: vajilla para casa y para restaurante, esmaltes propios y cursos. Sitio de demostración: negocio ficticio.">
+<meta name="theme-color" content="#ede6dc">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Olería Rañal · Taller de cerámica en Ponteceso">
+<meta property="og:description" content="Todo lo que sale del horno es más pequeño de lo que hiciste. Taller ficticio de demostración.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..600&family=Public+Sans:ital,wght@0,300..700;1,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Olería Rañal",
+  "description": "Taller de cerámica de gres con tienda y cursos. Negocio ficticio de demostración.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rúa do Forno Vello, 5",
+    "postalCode": "15110",
+    "addressLocality": "Ponteceso",
+    "addressRegion": "A Coruña",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34 981 00 00 45",
+  "email": "taller@oleriaranal.example",
+  "priceRange": "14 € – 54 €",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday"], "opens": "17:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "11:00", "closes": "14:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__caja">
+    <svg class="preloader__marca" viewBox="0 0 120 120" role="presentation" focusable="false">
+      <path class="preloader__aro" d="M26 46c0-12 15-20 34-20s34 8 34 20-6 48-34 48-34-36-34-48Z" fill="none" stroke="currentColor" stroke-width="3" pathLength="1"></path>
+      <ellipse class="preloader__boca" cx="60" cy="46" rx="34" ry="11" fill="none" stroke="currentColor" stroke-width="2"></ellipse>
+    </svg>
+    <span class="preloader__palabra">Rañal</span>
+  </div>
+</div>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="#inicio" aria-label="Olería Rañal, inicio">
+    <svg class="marca__icono" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+      <path d="M8 15c0-4 5-7 12-7s12 3 12 7-2 17-12 17S8 19 8 15Z" fill="none" stroke="currentColor" stroke-width="2.6"></path>
+      <ellipse cx="20" cy="15" rx="12" ry="4" fill="currentColor"></ellipse>
+    </svg>
+    <span class="marca__texto">
+      <span class="marca__nombre">Olería Rañal</span>
+      <span class="marca__bajada">taller de cerámica · Ponteceso</span>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Navegación principal">
+    <ul class="nav__lista">
+      <li><a href="#merma">La merma</a></li>
+      <li><a href="#esmaltes">Los esmaltes</a></li>
+      <li><a href="#piezas">Las piezas</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#taller">El taller</a></li>
+    </ul>
+    <a class="boton boton--hierro magnetico" href="#encargos">Encargar vajilla</a>
+  </nav>
+
+  <button class="hamburguesa" id="hamburguesa" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir el menú">
+    <span class="hamburguesa__caja" aria-hidden="true"><i></i><i></i></span>
+    <span class="hamburguesa__texto">Menú</span>
+  </button>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ 01 · HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <p class="hero__sobre">Taller de gres · Ponteceso, A Coruña · desde 2013</p>
+      <h1 class="hero__titular" data-reveal>Todo lo que sale del horno es más pequeño de lo que hiciste</h1>
+      <p class="hero__entrada">El barro encoge al secar y vuelve a encoger al cocer. Un doce por ciento, más o menos, según la pasta y el día. Trabajar aquí es aprender a contar con eso: cada pieza se levanta un poco más grande de lo que va a ser.</p>
+      <div class="hero__acciones">
+        <a class="boton boton--hierro magnetico" href="#merma">Ver cuánto encoge</a>
+        <a class="boton boton--linea magnetico" href="#piezas">Las piezas y sus precios</a>
+      </div>
+      <dl class="hero__datos">
+        <div><dt>Merma total</dt><dd><span class="contador" data-hasta="12">12</span> %</dd></div>
+        <div><dt>Piezas al año</dt><dd><span class="contador" data-hasta="1400">1400</span></dd></div>
+        <div><dt>Horas de horno</dt><dd><span class="contador" data-hasta="24">24</span></dd></div>
+      </dl>
+    </div>
+
+    <figure class="hero__pieza">
+      <svg class="taza taza--hero" viewBox="0 0 210 258" role="img" aria-label="Dibujo de una taza de gres con su asa">
+        <path class="taza__asa" d="M167 62c28 3 35 21 35 43s-11 40-37 42" fill="none" stroke-width="13" stroke-linecap="round"></path>
+        <path class="taza__cuerpo" d="M43 13h124l-13 222a25 25 0 0 1-25 23H81a25 25 0 0 1-25-23Z"></path>
+        <ellipse class="taza__boca" cx="105" cy="13" rx="62" ry="13"></ellipse>
+        <ellipse class="taza__interior" cx="105" cy="13" rx="52" ry="8"></ellipse>
+      </svg>
+      <figcaption>Taza de gres, 19,4 cm de alto una vez cocida.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ cinta ============ -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta__pista" id="cintaPista">
+      <span>gres a 1240 grados</span><i>·</i><span>esmaltes de la casa</span><i>·</i>
+      <span>apto para lavavajillas</span><i>·</i><span>dos cocciones por pieza</span><i>·</i>
+      <span>reposición garantizada tres años</span><i>·</i>
+    </div>
+  </div>
+
+  <!-- ============ 02 · LA MERMA (protagonista) ============ -->
+  <section class="merma seccion" id="merma">
+    <p class="seccion__indice"><span>01</span> La merma</p>
+    <h2 class="titular titular--grande" data-reveal>La misma taza, en tres momentos</h2>
+    <p class="merma__entrada">Esta es la razón por la que un encargo tarda semanas y por la que dos piezas nunca son idénticas. La regla no se mueve: la que encoge es la taza.</p>
+
+    <div class="merma__viaje" id="mermaViaje">
+    <div class="merma__caja merma--0" id="mermaCaja">
+      <div class="merma__escena">
+        <svg class="regla" viewBox="0 0 60 320" role="img" aria-label="Regla graduada de 0 a 24 centímetros">
+          <line x1="30" y1="12" x2="30" y2="308" class="regla__eje"></line>
+          <g class="regla__marcas">
+            <g><line x1="18" y1="308" x2="42" y2="308"></line><text x="48" y="312">0</text></g>
+            <g><line x1="22" y1="247" x2="42" y2="247"></line><text x="48" y="251">5</text></g>
+            <g><line x1="18" y1="186" x2="42" y2="186"></line><text x="48" y="190">10</text></g>
+            <g><line x1="22" y1="125" x2="42" y2="125"></line><text x="48" y="129">15</text></g>
+            <g><line x1="18" y1="64" x2="42" y2="64"></line><text x="48" y="68">20</text></g>
+            <g><line x1="22" y1="16" x2="42" y2="16"></line><text x="48" y="20">24</text></g>
+          </g>
+        </svg>
+
+        <div class="merma__pieza">
+          <svg class="taza taza--merma" id="tazaMerma" viewBox="0 0 210 258" role="img" aria-labelledby="tazaMermaTitulo">
+            <title id="tazaMermaTitulo">La misma taza, dibujada al tamaño que tiene en cada momento</title>
+            <path class="taza__asa" d="M167 62c28 3 35 21 35 43s-11 40-37 42" fill="none" stroke-width="13" stroke-linecap="round"></path>
+            <path class="taza__cuerpo" d="M43 13h124l-13 222a25 25 0 0 1-25 23H81a25 25 0 0 1-25-23Z"></path>
+            <ellipse class="taza__boca" cx="105" cy="13" rx="62" ry="13"></ellipse>
+            <ellipse class="taza__interior" cx="105" cy="13" rx="52" ry="8"></ellipse>
+          </svg>
+          <p class="merma__linea" aria-hidden="true"></p>
+        </div>
+      </div>
+
+      <div class="merma__ficha">
+        <div class="merma__mando" role="tablist" aria-label="Momentos de la pieza">
+          <button class="merma__paso" role="tab" aria-selected="true" id="merma-0" aria-controls="mermaPanel" data-paso="0">Recién hecha</button>
+          <button class="merma__paso" role="tab" aria-selected="false" tabindex="-1" id="merma-1" aria-controls="mermaPanel" data-paso="1">Seca</button>
+          <button class="merma__paso" role="tab" aria-selected="false" tabindex="-1" id="merma-2" aria-controls="mermaPanel" data-paso="2">Cocida</button>
+        </div>
+
+        <div id="mermaPanel" role="tabpanel" aria-labelledby="merma-0" tabindex="0">
+          <p class="merma__momento" id="mermaMomento">Recién hecha, el mismo día</p>
+          <dl class="merma__datos">
+            <div><dt>Altura</dt><dd><b id="mermaAlto">22,0</b> cm</dd></div>
+            <div><dt>Diámetro de boca</dt><dd><b id="mermaAncho">9,6</b> cm</dd></div>
+            <div><dt>Ha perdido</dt><dd><b id="mermaPerdido">0</b> %</dd></div>
+            <div><dt>Agua</dt><dd><b id="mermaAgua">22</b> %</dd></div>
+          </dl>
+          <p class="merma__nota" id="mermaNota">Acaba de salir del torno. Está blanda, pesa casi el doble de lo que pesará y no se puede ni coger por el asa.</p>
+        </div>
+
+        <ul class="merma__claves">
+          <li><b>Del torno a seca</b><span>De diez a quince días a la sombra. Si se seca al sol o con corriente, el asa se agrieta por donde se pegó.</span></li>
+          <li><b>De seca a cocida</b><span>Dos cocciones: bizcocho a 980 °C y esmalte a 1240 °C. Entre las dos, treinta y seis horas contando el enfriado.</span></li>
+          <li><b>Por qué importa</b><span>Una vajilla de veinticuatro piezas no se hace en una semana, y una pieza rota no se repone al día siguiente. Con esto en la mano, los plazos se entienden solos.</span></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · LOS ESMALTES ============ -->
+  <section class="esmaltes" id="esmaltes">
+    <div class="seccion">
+      <p class="seccion__indice"><span>02</span> Los esmaltes</p>
+      <h2 class="titular" data-reveal>Ocho esmaltes de la casa y ninguno comprado hecho</h2>
+      <p class="esmaltes__entrada">Cada uno tiene su prueba colgada en la pared del taller, con la fecha y la temperatura. Estos ocho son los que se repiten; el resto se quedaron en la pared.</p>
+
+      <ul class="muestrario" id="muestrario">
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#6e8c74; --moteado:#4d6251">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">CE-04</p>
+          <p class="muestra__nombre">Celadón de ceniza</p>
+          <p class="muestra__dato">Satinado · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#d8cbb4; --moteado:#b7a687">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">AR-11</p>
+          <p class="muestra__nombre">Arena mate</p>
+          <p class="muestra__dato">Mate · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#8a4b2a; --moteado:#5e3018">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">HI-02</p>
+          <p class="muestra__nombre">Hierro rojo</p>
+          <p class="muestra__dato">Brillante · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#3f4a44; --moteado:#222925">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">PI-07</p>
+          <p class="muestra__nombre">Pizarra húmeda</p>
+          <p class="muestra__dato">Satinado · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#efe7d8; --moteado:#cfc3ab">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">LE-01</p>
+          <p class="muestra__nombre">Leche</p>
+          <p class="muestra__dato">Brillante · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#9a8248; --moteado:#6d5a2c">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">PA-09</p>
+          <p class="muestra__nombre">Paja quemada</p>
+          <p class="muestra__dato">Mate · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#5c6b7a; --moteado:#3a4550">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">MA-03</p>
+          <p class="muestra__nombre">Marea</p>
+          <p class="muestra__dato">Satinado · 1240 °C</p>
+        </li>
+        <li class="muestra" data-cursor="Prueba de horno" style="--esmalte:#2f2a26; --moteado:#151210">
+          <span class="muestra__chapa" aria-hidden="true"></span>
+          <p class="muestra__codigo">NE-05</p>
+          <p class="muestra__nombre">Negro de forja</p>
+          <p class="muestra__dato">Mate · 1240 °C</p>
+        </li>
+      </ul>
+
+      <p class="esmaltes__nota">Ninguno lleva plomo ni cadmio y todos van a lavavajillas. El color cambia un poco de hornada a hornada: es esmalte hecho en cubo, no pintura industrial.</p>
+    </div>
+  </section>
+
+  <!-- ============ 04 · LAS PIEZAS ============ -->
+  <section class="piezas seccion" id="piezas">
+    <p class="seccion__indice"><span>03</span> Las piezas</p>
+    <div class="piezas__rejilla">
+      <div>
+        <h2 class="titular" data-reveal>Lo que hay hecho, con su precio</h2>
+        <table class="tabla-piezas">
+          <caption class="visualmente-oculto">Piezas de la tienda del taller y sus precios</caption>
+          <thead><tr><th scope="col">Pieza</th><th scope="col">Medida</th><th scope="col">Precio</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Taza de desayuno</th><td>19,4 cm · 330 ml</td><td>14 €</td></tr>
+            <tr><th scope="row">Cuenco hondo</th><td>16 cm de boca</td><td>18 €</td></tr>
+            <tr><th scope="row">Plato llano</th><td>26 cm</td><td>22 €</td></tr>
+            <tr><th scope="row">Plato hondo</th><td>22 cm</td><td>24 €</td></tr>
+            <tr><th scope="row">Jarra de agua</th><td>1,2 litros</td><td>32 €</td></tr>
+            <tr><th scope="row">Fuente grande</th><td>38 × 24 cm</td><td>54 €</td></tr>
+          </tbody>
+        </table>
+        <p class="piezas__nota">Precios de muestra para esta demostración. Las piezas se venden en la tienda del taller; no hay tienda en línea porque la cerámica viaja mal y prefiero que la cojas antes de comprarla.</p>
+      </div>
+      <figure class="piezas__foto" data-mascara data-cursor="Foto de archivo">
+        <img src="assets/fotos/piezas-1600.jpg" srcset="assets/fotos/piezas-800.jpg 800w, assets/fotos/piezas-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 40vw" width="1600" height="2000" loading="lazy" alt="Decenas de tazas y jarras de barro apiladas, ninguna igual a la de al lado">
+        <figcaption>Foto de archivo: piezas parecidas a las de la tienda.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 05 · ENCARGOS ============ -->
+  <section class="encargos seccion" id="encargos">
+    <p class="seccion__indice"><span>04</span> Encargos</p>
+    <div class="encargos__rejilla">
+      <div>
+        <h2 class="titular" data-reveal>Vajilla para restaurantes, con las cuentas claras</h2>
+        <ul class="encargos__lista">
+          <li><b>Mínimo</b><span>Veinticuatro piezas por modelo. Por debajo de eso no compensa preparar el esmalte.</span></li>
+          <li><b>Plazo</b><span>De ocho a diez semanas desde la muestra aprobada. No es lentitud: es secado y dos cocciones.</span></li>
+          <li><b>Muestra</b><span>Se hacen dos piezas de prueba antes de empezar. Cuestan 40 € y se descuentan del pedido.</span></li>
+          <li><b>Reposición</b><span>Guardo la receta del esmalte y el molde tres años. La reposición se sirve en cuatro semanas.</span></li>
+          <li><b>Diferencias</b><span>Entre una hornada y otra hay variación de color. Si necesitas veinticuatro platos idénticos, esto no es lo tuyo.</span></li>
+        </ul>
+      </div>
+      <figure class="encargos__foto" data-mascara data-cursor="Foto de archivo">
+        <img src="assets/fotos/taller-1600.jpg" srcset="assets/fotos/taller-800.jpg 800w, assets/fotos/taller-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 40vw" width="1600" height="2400" loading="lazy" alt="Estantería de taller con platos de cerámica apilados esperando la cocción">
+        <figcaption>Foto de archivo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 06 · CURSOS ============ -->
+  <section class="cursos seccion" id="cursos">
+    <p class="seccion__indice"><span>05</span> Cursos</p>
+    <h2 class="titular" data-reveal>Tres formas de mancharse las manos</h2>
+    <div class="cursos__rejilla">
+      <article class="curso">
+        <h3>Iniciación al torno</h3>
+        <p>Cuatro sesiones de dos horas, los jueves por la tarde. Se centra el barro, se levantan cilindros y, con suerte, sale una taza. Lo que hagas se cuece y te lo llevas a las cinco semanas.</p>
+        <dl><div><dt>Sesiones</dt><dd>4 × 2 h</dd></div><div><dt>Plazas</dt><dd>6</dd></div><div><dt>Precio</dt><dd>120 €</dd></div></dl>
+      </article>
+      <article class="curso">
+        <h3>Modelado a mano</h3>
+        <p>Una tarde, sin torno: churros y placa. Es la forma más antigua y la más agradecida para empezar. Se sale con dos piezas hechas.</p>
+        <dl><div><dt>Sesiones</dt><dd>1 × 3 h</dd></div><div><dt>Plazas</dt><dd>8</dd></div><div><dt>Precio</dt><dd>38 €</dd></div></dl>
+      </article>
+      <article class="curso">
+        <h3>Domingo de rakú</h3>
+        <p>Cocción rápida en el patio, con humo y choque térmico. Se rompe alguna pieza, forma parte. Hay que venir con ropa que pueda mancharse.</p>
+        <dl><div><dt>Sesiones</dt><dd>1 × 5 h</dd></div><div><dt>Plazas</dt><dd>8</dd></div><div><dt>Precio</dt><dd>60 €</dd></div></dl>
+      </article>
+    </div>
+    <p class="cursos__nota">Material y cocción incluidos. Las plazas se guardan con el pago; si no puedes venir, avisa con cuarenta y ocho horas y se pasa a otra fecha. A partir de catorce años.</p>
+  </section>
+
+  <!-- ============ 07 · EL TALLER ============ -->
+  <section class="taller seccion" id="taller">
+    <p class="seccion__indice"><span>06</span> El taller</p>
+    <div class="taller__rejilla">
+      <div class="taller__texto">
+        <h2 class="titular" data-reveal>Un torno, dos hornos y una pared de pruebas</h2>
+        <p>El taller lo llevamos <strong>Maruxa Rañal</strong>, que tornea, y <strong>Lois Barca</strong>, que se ocupa del horno y de los esmaltes. Abrimos en 2013 en un bajo del Forno Vello, y seguimos ahí porque la nave tiene la altura que pide el horno grande.</p>
+        <p>La tienda está en el mismo sitio que el taller: si vienes en horario de trabajo, verás la mesa como está, que no siempre es bonita.</p>
+
+        <p class="estado" id="estado"><span class="estado__punto" aria-hidden="true"></span><span id="estadoTexto">Comprobando el horario…</span></p>
+
+        <table class="horario">
+          <caption class="visualmente-oculto">Horario de la tienda del taller</caption>
+          <tbody id="horarioCuerpo">
+            <tr><th scope="row">Lunes</th><td>Cerrado</td></tr>
+            <tr><th scope="row">Martes</th><td>10:30 – 14:00</td></tr>
+            <tr><th scope="row">Miércoles</th><td>10:30 – 14:00</td></tr>
+            <tr><th scope="row">Jueves</th><td>10:30 – 14:00 · 17:00 – 20:00</td></tr>
+            <tr><th scope="row">Viernes</th><td>10:30 – 14:00 · 17:00 – 20:00</td></tr>
+            <tr><th scope="row">Sábado</th><td>11:00 – 14:00</td></tr>
+            <tr><th scope="row">Domingo</th><td>Cerrado</td></tr>
+          </tbody>
+        </table>
+
+        <ul class="taller__datos">
+          <li><span>Teléfono</span><a href="tel:+34981000045">981 00 00 45</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/34600000045" rel="noopener">600 00 00 45</a></li>
+          <li><span>Correo</span><a href="mailto:taller@oleriaranal.example">taller@oleriaranal.example</a></li>
+          <li><span>Dónde</span>Rúa do Forno Vello, 5 · 15110 Ponteceso (A Coruña)</li>
+          <li><span>Artesanía</span>Taller de muestra, sin número de registro artesano real</li>
+        </ul>
+
+        <div class="voces">
+          <h3>Del cuaderno del taller</h3>
+          <p class="voces__aviso">Notas de muestra, escritas para esta demostración. No proceden de ninguna plataforma ni de ningún cliente real.</p>
+          <blockquote><p>«Pedimos veinticuatro platos para el restaurante y tardaron nueve semanas, como habían dicho. Llevamos tres años sin romper la vajilla entera y cuando pasa, la reponen.»</p><footer>Un restaurante de la costa</footer></blockquote>
+          <blockquote><p>«Fui al curso de torno pensando que saldría una taza y salieron cuatro cosas raras. Volví al siguiente.»</p><footer>Uxía, de Corme</footer></blockquote>
+        </div>
+      </div>
+
+      <div class="taller__lado">
+        <figure data-mascara>
+          <img src="assets/fotos/manos-1600.jpg" srcset="assets/fotos/manos-800.jpg 800w, assets/fotos/manos-1600.jpg 1600w" sizes="(max-width: 900px) 92vw, 36vw" width="1600" height="2400" loading="lazy" alt="Persona con delantal sosteniendo un cuenco de cerámica con las dos manos">
+          <figcaption>Foto de archivo.</figcaption>
+        </figure>
+        <div class="taller__mapa">
+          <div class="mapa-consent" id="mapaConsent">
+            <svg class="mapa-consent__dibujo" viewBox="0 0 300 170" aria-hidden="true" focusable="false">
+              <path d="M0 124c50-8 68-34 118-34s74 30 120 22" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".5"></path>
+              <path d="M0 148c54-6 74-20 122-20s74 16 118 8" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".3"></path>
+              <path d="M132 60h36v34h-36zM196 70h44v24h-44z" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".4"></path>
+              <circle cx="150" cy="100" r="5" fill="currentColor"></circle>
+              <path d="M150 105v24" stroke="currentColor" stroke-width="1.5"></path>
+            </svg>
+            <p>El mapa lo carga Google y pone cookies suyas. Solo aparece si lo pides tú.</p>
+            <button class="boton boton--linea" type="button" id="mapaBoton">Cargar el mapa de Google</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie" id="pie">
+  <div class="pie__rejilla">
+    <div class="pie__marca">
+      <svg class="marca__icono" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <path d="M8 15c0-4 5-7 12-7s12 3 12 7-2 17-12 17S8 19 8 15Z" fill="none" stroke="currentColor" stroke-width="2.6"></path>
+        <ellipse cx="20" cy="15" rx="12" ry="4" fill="currentColor"></ellipse>
+      </svg>
+      <p class="pie__nombre">Olería Rañal</p>
+      <p class="pie__lema">Taller de cerámica de gres en Ponteceso, desde 2013.</p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Dónde</h2>
+      <p>Rúa do Forno Vello, 5<br>15110 Ponteceso · A Coruña</p>
+      <p><a href="tel:+34981000045">981 00 00 45</a><br><a href="mailto:taller@oleriaranal.example">taller@oleriaranal.example</a></p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Tienda</h2>
+      <p>Martes a sábado<br>Mañanas de 10:30 a 14:00<br>Jueves y viernes, también tarde<br>Domingo y lunes, cerrado</p>
+    </div>
+    <div class="pie__bloque">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+        <li><a href="privacidad.html">Privacidad y cookies</a></li>
+        <li><a href="#inicio">Volver arriba</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="pie__demo"><strong>Sitio de demostración.</strong> Olería Rañal es un taller ficticio; las piezas, los precios, los cursos, las fotografías y las opiniones son de muestra. No se publica ningún número de registro artesano porque no se inventa.</p>
+  <p class="pie__creditos">Fotografías de archivo con licencia Pexels, acreditadas en <code>CREDITOS.md</code>. Taza, regla, muestrario de esmaltes y logotipo, dibujados en SVG para esta plantilla.</p>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden role="dialog" aria-labelledby="cookieTitulo" aria-describedby="cookieTexto">
+  <div class="cookie-banner__texto">
+    <h2 id="cookieTitulo">Sobre las cookies</h2>
+    <p id="cookieTexto">Esta web no usa cookies de seguimiento ni analítica. Solo guardamos en tu navegador que ya has visto este aviso. El mapa de Google únicamente se carga si pulsas el botón.</p>
+  </div>
+  <div class="cookie-banner__acciones">
+    <a class="cookie-banner__mas" href="privacidad.html">Más detalle</a>
+    <button class="boton boton--hierro" type="button" id="cookieAceptar">Entendido</button>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor__forma"></span>
+  <span class="cursor__texto" id="cursorTexto"></span>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
