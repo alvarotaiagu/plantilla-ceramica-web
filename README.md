@@ -65,7 +65,7 @@ No es una animación decorativa: es el dato, dibujado.
 | Mapa de Google | 0 iframes hasta pulsar, 1 después |
 | **Sin GSAP** (CDN cortado) | `has-motion:false`, titular legible, foto sin recortar, contador con su cifra final, **y los botones de la merma siguen funcionando** |
 | **Movimiento reducido** | el contenido sigue cambiando: pulsar «Seca» da `20,5 cm · 7 %` y la escala `0.93`; lo que se apaga es la transición, no el dato |
-| **Tareas largas** (`PerformanceObserver`, 10 s) | **96, 61, 81 ms** en carga fría (la peor, 96 ms); en carga con caché, **ninguna** |
+| **Tareas largas** (`PerformanceObserver`, 10 s) | **ninguna** en tres cargas en frío medidas con la caché deshabilitada (`Network.setCacheDisabled`). En la primerísima carga del día, con el CDN aún sin resolver, se registraron 96, 61 y 81 ms |
 
 Las 65 capturas están en `screenshots/`, en JPEG de calidad 72 para que quepan
 todas las secciones sin inflar el repositorio.
