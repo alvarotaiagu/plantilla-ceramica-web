@@ -86,22 +86,33 @@ a { color: inherit; }
 }
 .saltar:focus { top: 1rem; }
 
-/* ====================== preloader ====================== */
+/* ====================== cortina de entrada ====================== */
+/* El borde curvo se dibuja con una custom property que mueve GSAP; queda
+   registrada con @property para que interpole como número donde se pueda. */
+@property --curva-cortina {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
 .preloader {
   position: fixed; inset: 0; z-index: 400;
-  background: var(--fondo);
+  background: var(--tinta);
   display: grid; place-items: center;
-  transition: opacity .7s var(--curva), visibility .7s;
+  transform-origin: 50% 0%;
+  border-bottom-left-radius: 52% calc(var(--curva-cortina, 0) * 11vh);
+  border-bottom-right-radius: 52% calc(var(--curva-cortina, 0) * 11vh);
 }
-.preloader.fuera { opacity: 0; visibility: hidden; }
-.preloader__caja { text-align: center; color: var(--hierro); }
+/* Retirada garantizada: si no hay GSAP o hay movimiento reducido, el JS le
+   pone display:none en cuanto arranca. Esta clase es solo el plan B. */
+.preloader.fuera { opacity: 0; visibility: hidden; transition: opacity .5s var(--curva), visibility .5s; }
+.preloader__caja { text-align: center; color: var(--hierro-claro); }  /* 5,12 sobre --tinta */
 .preloader__marca { width: 88px; height: 88px; }
 .preloader__aro { stroke-dasharray: 1; stroke-dashoffset: 1; }
 .preloader__boca { opacity: 0; }
 .preloader__palabra {
   display: block; margin-top: .8rem;
   font-family: var(--titulo); font-size: 1.5rem; letter-spacing: .1em;
-  color: var(--tinta-media);
+  color: var(--crema-suave);           /* 6,72 sobre --tinta */
   transform: scale(1.14);
 }
 html:not(.has-motion) .preloader { display: none; }

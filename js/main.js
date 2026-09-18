@@ -51,23 +51,37 @@
     else window.scrollTo({ top: typeof destino === 'number' ? destino : 0, behavior: reduce ? 'auto' : 'smooth' });
   }
 
-  /* ---------- 2 · preloader: el nombre encoge hasta su sitio ---------- */
+  /* ---------- 2 · cortina de entrada ----------
+     Gesto propio del concepto: el perfil de la jarra se dibuja, el nombre
+     ENCOGE hasta su tamaño (que es de lo que va la plantilla) y después la
+     cortina sube encogiendo un poco, con el borde de abajo curvado.
+     Retirada garantizada: sin GSAP y con movimiento reducido se quita de
+     inmediato, y aun con GSAP hay una red de seguridad a los 4,2 s. */
   var preloader = document.getElementById('preloader');
-  function cerrarPreloader() {
+  var animHero = [];                                  // el hero arranca cuando sube la cortina
+  function arrancarHero() { animHero.splice(0).forEach(function (f) { f(); }); }
+
+  function quitarPreloader() {
     if (!preloader) return;
-    preloader.classList.add('fuera');
-    setTimeout(function () { preloader.style.display = 'none'; }, 800);
+    preloader.style.display = 'none';
+    arrancarHero();
   }
   if (!movimiento) {
-    if (preloader) preloader.style.display = 'none';
+    quitarPreloader();
   } else {
-    var tlIntro = gsap.timeline({ onComplete: cerrarPreloader });
+    var tlIntro = gsap.timeline();
     tlIntro
-      .to('.preloader__aro', { strokeDashoffset: 0, duration: 1, ease: 'power2.inOut' })
-      .to('.preloader__boca', { opacity: 1, duration: .35 }, '-=.2')
-      .to('.preloader__palabra', { scale: 1, duration: .8, ease: 'power3.out' }, '-=.45')
-      .to('.preloader__caja', { opacity: 0, duration: .4, delay: .25 });
-    setTimeout(cerrarPreloader, 4200);   // red de seguridad
+      .to('.preloader__aro', { strokeDashoffset: 0, duration: 1, ease: 'power2.inOut' }, 0)
+      .to('.preloader__boca', { opacity: 1, duration: .35 }, .82)
+      .to('.preloader__palabra', { scale: 1, duration: .85, ease: 'power3.out' }, .62)
+      .to('.preloader__caja', { opacity: 0, duration: .35, ease: 'power2.in' }, 1.62)
+      .to(preloader, { '--curva-cortina': 1, duration: .5, ease: 'power2.inOut' }, 1.68)
+      .to(preloader, {
+        yPercent: -102, scaleX: .94, duration: 1.25, ease: 'expo.inOut',
+        onComplete: quitarPreloader
+      }, 1.9)
+      .add(arrancarHero, 2.2);
+    setTimeout(quitarPreloader, 4200);   // red de seguridad
   }
 
   /* ---------- 3 · aviso de cookies ---------- */
@@ -149,11 +163,13 @@
   if (movimiento) {
     document.querySelectorAll('[data-reveal]').forEach(function (el, idx) {
       var letras = partir(el);
-      gsap.to(letras, {
-        y: 0, duration: .9, ease: 'power3.out', stagger: .016,
-        scrollTrigger: { trigger: el, start: 'top 88%', once: true },
-        delay: idx === 0 ? 1.6 : 0
-      });
+      // El titular del hero no lleva retardo fijo: lo arranca la cortina.
+      var lanzar = function () {
+        var conf = { y: 0, duration: .9, ease: 'power3.out', stagger: .016 };
+        if (idx !== 0) conf.scrollTrigger = { trigger: el, start: 'top 88%', once: true };
+        gsap.to(letras, conf);
+      };
+      if (idx === 0) animHero.push(lanzar); else lanzar();
     });
   }
 
@@ -163,9 +179,11 @@
     if (!movimiento || isNaN(hasta)) return;
     var obj = { v: 0 };
     el.textContent = '0';
-    gsap.to(obj, {
-      v: hasta, duration: 1.6, ease: 'power2.out', delay: 1.8,
-      onUpdate: function () { el.textContent = Math.round(obj.v); }
+    animHero.push(function () {
+      gsap.to(obj, {
+        v: hasta, duration: 1.6, ease: 'power2.out',
+        onUpdate: function () { el.textContent = Math.round(obj.v); }
+      });
     });
   });
 
