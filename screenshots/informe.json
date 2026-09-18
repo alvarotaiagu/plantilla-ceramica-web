@@ -10,7 +10,7 @@
     "https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js :: net::ERR_FAILED"
   ],
   "pruebas": {
-    "estado": "Cerrado ahora · abre hoy a las 10:30",
+    "estado": "Cerrado ahora · abre hoy a las 11:00",
     "mermaInicial": "merma__caja merma--0 · alto 22,0 · escala matrix(1, 0, 0, 1, 0, 0)",
     "muestras": "8 esmaltes · 8 chapas",
     "fotos": "576x864 | 0x0 | 0x0",
@@ -21,7 +21,7 @@
     "cookiesCerrado": true,
     "mapaIframe": 1,
     "menu": "true -> false",
-    "sinGsap": "has-motion:false · titular opacidad:1 · titular texto:Todo lo que sale del horno e · foto clip:inset(0px) · contador:12 · estado:Cerrado ahora · abre hoy a las 10: || tras pulsar Cocida: merma__caja merma--2 · 19,4 cm",
+    "sinGsap": "has-motion:false · titular opacidad:1 · titular texto:Todo lo que sale del horno e · foto clip:inset(0px) · contador:12 · estado:Cerrado ahora · abre hoy a las 11: || tras pulsar Cocida: merma__caja merma--2 · 19,4 cm",
     "reduce": "has-motion:true · tras pulsar Seca: merma__caja merma--1 · 20,5 cm · perdido 7% · escala matrix(0.93, 0, 0, 0.93, 0, 0) · foto clip:inset(0px)"
   },
   "longtask": ""
