@@ -67,7 +67,7 @@ No es una animación decorativa: es el dato, dibujado.
 | **Movimiento reducido** | el contenido sigue cambiando: pulsar «Seca» da `20,5 cm · 7 %` y la escala `0.93`; lo que se apaga es la transición, no el dato |
 | **Tareas largas** (`PerformanceObserver`, 10 s) | **ninguna** en tres cargas en frío medidas con la caché deshabilitada (`Network.setCacheDisabled`). En la primerísima carga del día, con el CDN aún sin resolver, se registraron 96, 61 y 81 ms |
 
-Las 64 capturas están en `screenshots/`, en JPEG de calidad 72 para que quepan
+Las 72 capturas están en `screenshots/`, en JPEG de calidad 72 para que quepan
 todas las secciones sin inflar el repositorio.
 
 ## Accesibilidad
